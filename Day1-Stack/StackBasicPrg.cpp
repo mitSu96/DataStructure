@@ -55,16 +55,20 @@ int main()
     cin>>size;
     initStack(size);
     cout<<"Stack of size : "<<size<<" created\n";
-    do{
+    do
+	{
     	cout<<"Enter your choice to do stack operations :\na.push\nb.pop\nc.At Top\nd.Print Stack\ne.Exit\n";
     	cin>>ch;
     	cout<<endl;
-    	switch(ch){
+    	switch(ch)
+		{
     		case 'a':
-    			if(isFull()){
+    			if(isFull())
+				{
     				cout<<"Stack Is Full"<<endl;
 				}
-				else{
+				else
+				{
 					cout<<"Enter new value"<<endl;
 					cin>>e;
 					push(e);		
@@ -72,27 +76,33 @@ int main()
 				break;
 			
 			case 'b':
-				if(isEmpty){
+				if(isEmpty())
+				{
 					cout<<"Stack is Empty"<<endl;
-				}else{
+				}else
+				{
 					cout<<"Pop element : "<<pop()<<endl;
 				}
 				break;
 			
 			case 'c':
-				if(isEmpty()){
+				if(isEmpty())
+				{
 					cout<<"Stack is empty"<<endl;
 				}
-				else{
+				else
+				{
 					cout<<atTop()<<endl;
 				}
 				break;
 			
 			case 'd':
-				if(isEmpty()){
+				if(isEmpty())
+				{
 					cout<<"Stack is Empty"<<endl;
 				}
-				else{
+				else
+				{
 					printStack();
 				}
 				break;
